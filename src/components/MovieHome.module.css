@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    margin: 3.125rem;
+    padding: 0.625rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(50px, auto));
+    margin: 0.625rem;
+}
+
+.movie_title {
+    text-decoration: none;
+    color: white;
+}
+
+.movie_title:hover {
+    color: #A9CEC2;
+}

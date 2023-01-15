@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    max-width: 1000px;
+    color: white;
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 50px;
+}
