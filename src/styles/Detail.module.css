@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C2C2C;
+    padding: 10rem 1rem 1rem;
+
+}
+
+@media screen and (max-width:48rem) {
+    .container {
+        padding: 5rem 1rem 1rem;
+    }
+
+}

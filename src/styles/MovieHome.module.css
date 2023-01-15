@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: white;
-    margin: 3.125rem;
+    margin: 2rem;
     padding: 0.625rem;
     border: 1px solid white;
     border-radius: 10px;
@@ -14,7 +14,7 @@
 
 .content {
     display: grid;
-    grid-template-rows: repeat(3, minmax(50px, auto));
+    grid-template-rows: repeat(3, minmax(3.125rem, auto));
     margin: 0.625rem;
 }
 
@@ -25,4 +25,17 @@
 
 .movie_title:hover {
     color: #A9CEC2;
+}
+
+@media screen and (max-width:48rem) {
+    .container {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .content {
+        display: grid;
+        grid-template-rows: repeat(1, minmax(3.125rem, auto));
+        margin: 0.625rem;
+    }
 }

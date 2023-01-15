@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import styles from './MovieDetail.module.css';
+import styles from '../styles/MovieDetail.module.css';
 
 function MovieDetail({
-  large_cover_image,
+  medium_cover_image,
   title_long,
   genres,
   runtime,
@@ -11,7 +11,7 @@ function MovieDetail({
 }) {
   return (
     <div className={styles.container}>
-      <img src={large_cover_image} alt={title_long} />
+      <img src={medium_cover_image} alt={title_long} />
       <div className={styles.content}>
         <h2>{title_long}</h2>
         <p>
@@ -26,7 +26,7 @@ function MovieDetail({
 
 MovieDetail.propTypes = {
   id: PropTypes.number.isRequired,
-  large_cover_image: PropTypes.string.isRequired,
+  medium_cover_image: PropTypes.string.isRequired,
   title_long: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string),
   runtime: PropTypes.number.isRequired,

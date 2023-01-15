@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    max-width: 62.5rem;
+    color: white;
+    margin: 3.125rem;
+    padding: 0.625rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 3.125rem;
+}
+
+@media screen and (max-width:48rem) {
+    .container {
+        flex-direction: column;
+    }
+}

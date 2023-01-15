@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from './MovieHome.module.css';
+import styles from '../styles/MovieHome.module.css';
 
 function MovieHome({
   id,
